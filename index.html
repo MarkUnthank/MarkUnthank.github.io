@@ -1,5 +1,7 @@
 <script>
-   if ( document.referrer.indexOf("preketch.com") != -1) {
-     echo "hello"
+   const qString = window.location.search;
+   const urlParams = new URLSearchParams(qString);
+   if ( URLSearchParams.get('pk') ) {
+      console.log("pk");
    }
 </script>
