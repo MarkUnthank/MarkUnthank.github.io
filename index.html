@@ -1,7 +1,9 @@
 <script>
-   const qString = window.location.search;
-   const urlParams = new URLSearchParams(qString);
-   if ( urlParams.get('pk') ) {
-      console.log("pk");
-   }
+  const qString = window.location.search;
+  const urlParams = new URLSearchParams(qString);
+  if ( urlParams.get('pk') ) {
+    const sites = ["https://markunthank.co.uk"]
+    const random = Math.floor(Math.random() * sites.length);
+    console.log(random, sites[random]);
+  }
 </script>
