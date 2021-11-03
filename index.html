@@ -4,7 +4,6 @@
   if ( urlParams.get('pk') ) {
     const sites = ["https://markunthank.co.uk", "http://contrerasdvorak.com/wp/", "https://taranielsen.com/"]
     const random = Math.floor(Math.random() * sites.length);
-    console.log(random, sites[random]);
-    location.href = sites[random];
+    window.location.replace( sites[random] );
   }
 </script>
