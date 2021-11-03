@@ -2,7 +2,7 @@
   const qString = window.location.search;
   const urlParams = new URLSearchParams(qString);
   if ( urlParams.get('pk') ) {
-    const sites = ["https://markunthank.co.uk", "http://contrerasdvorak.com/wp/", "https://taranielsen.com/"];
+    const sites = ["https://markunthank.co.uk", "http://contrerasdvorak.com/wp/", "https://taranielsen.com/", "https://movingimag.es/"];
     const random = Math.floor(Math.random() * sites.length);
     window.location.replace( sites[random] );
   }
